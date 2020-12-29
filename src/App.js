@@ -31,12 +31,12 @@ addTodo = (title) =>{
 }
 completeTodo = (id) =>{
   let todos =[...this.state.todos]
-  todos.filter(todo=>{
+  todos.filter(todo =>{
     if(todo.id === id){
       todo.status=true;
     }
   })
-  this.setState({todos})
+   return this.setState({todos})
 }
 deleteTodo = (id) =>{
   let todos =[...this.state.todos]
@@ -45,13 +45,12 @@ deleteTodo = (id) =>{
       todos.splice(index,1);
     }
   })
-  this.setState({todos})
+  return this.setState({todos})
 }
   render(){
     return (
       <div className="App1">
         <Todo addTodo={(todo) => this.addTodo(todo)}/>
-
           <div className="App">
           <FlipMove duration={500} easing="ease-out">
           {this.state.todos.map(todo =>(

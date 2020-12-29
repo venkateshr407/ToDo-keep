@@ -33,7 +33,7 @@ export default class Todo extends Component {
         return (
             <div>
                 <div className={styles.heading}>
-                    <img className={styles.svg} src={svg}/>
+                    <img className={styles.svg} src={svg} alt="img"/>
                     <h1>{display}'s task</h1>
                 </div>
             <div className={styles.todo}>
