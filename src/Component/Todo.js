@@ -41,7 +41,7 @@ export default class Todo extends Component {
                     <form onSubmit={this.addTodo}>
                         <input
                             type="text"
-                            placeholder="what you do today?"
+                            placeholder="Add your task!"
                             value={this.state.todoText}
                             onChange={(e) => this.setState({todoText:e.target.value})}
                         />
