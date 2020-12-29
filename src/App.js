@@ -36,7 +36,7 @@ completeTodo = (id) =>{
       todo.status=true;
     }
   })
-   return this.setState({todos})
+ this.setState({todos})
 }
 deleteTodo = (id) =>{
   let todos =[...this.state.todos]
@@ -45,7 +45,7 @@ deleteTodo = (id) =>{
       todos.splice(index,1);
     }
   })
-  return this.setState({todos})
+ this.setState({todos})
 }
   render(){
     return (

@@ -16,9 +16,9 @@ export default class TodoTemplate extends Component {
                     >{this.props.todoData.title}<span className={styles.date} style={{display:this.props.todoData.status? 'none':false}}>{this.state.date.toLocaleTimeString()}</span></p>
                     <div className={styles.status}>
                         {this.props.todoData.status? false:
-                        <i class="fas fa-check-circle done"  style={{color:this.props.todoData.status?'#ff0000':null}} onClick={() => this.props.completeTodo(this.props.todoData.id)}/>}
+                        <i className="fas fa-check-circle done"  style={{color:this.props.todoData.status?'#ff0000':null}} onClick={() => this.props.completeTodo(this.props.todoData.id)}/>}
                         
-                        <i class="fas fa-trash delete" style={{color:this.props.todoData.status? '#ff0000':false}} onClick={() => this.props.deleteTodo(this.props.todoData.id)}/>
+                        <i className="fas fa-trash delete" style={{color:this.props.todoData.status? '#ff0000':false}} onClick={() => this.props.deleteTodo(this.props.todoData.id)}/>
                     </div>
                 </div>
             </div>
